@@ -29,54 +29,69 @@ body{
     height: var(--width);
     box-sizing: border-box;
     animation: spin 8s linear infinite;
-    position: absolute;
     top: 50%;
     left: 10%;
     left: var(--wrap-left);
-    animation: y var(--y-speed) linear infinite alternate;
 }
 
-.wrap-react .svg{
-    left: 13%;
+.svg-container-1{
+    position: relative;
+}
+
+.svg-container-2{
+    position: relative;
+
+}
+
+.svg-wrap{
+    position: relative;
+}
+
+.wrap-up{
     top: 15%;
 }
-.wrap-css .svg{
-    left: 8%;
+.wrap-down{
     top: 25%;
 }
-.wrap-node .svg{
-    left: 5%;
+.wrap-charm{
     top: 35%;
 }
-.wrap-sass .svg{
-    left: 8%;
+.wrap-strange{
     top: 45%;
 }
-.wrap-redux .svg{
-    left: 13%;
+.wrap-top {
     top: 55%;
 }
 
-.wrap-python .svg{
-    right: 13%;
-    top: 15%;
+/* postion individual */
+
+
+
+.wrap-jquery{
+    right: 20%;
 }
-.wrap-db .svg{
-    right: 8%;
-    top: 25%;
+
+.wrap-python{
+    right: 40%;
 }
-.wrap-jquery .svg{
-    right: 5%;
-    top: 35%;
+
+.wrap-css{
+    right: 20%;
 }
-.wrap-github .svg{
-    right: 8%;
-    top: 45%;
+
+
+.wrap-redux{
+    left: 20%;
 }
-.wrap-netlify .svg{
-    right: 13%;
-    top: 55%;
+
+.wrap-db{
+    left: 40%;
 }
+
+.wrap-netlify{
+    left: 20%;
+}
+
 
 
 @keyframes spin {
@@ -85,15 +100,17 @@ body{
         }
 }
 
+.svg-containers{
+    width: 40%;
+}
 
 .wrapper{
-    width:80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .bio-container{
-    background: #f6ebdc;
+    width: 15%;
     color: #fff;
     display: flex;
     justify-content: center;
