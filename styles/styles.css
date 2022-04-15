@@ -8,7 +8,7 @@
 }
 
 body{
-    background: linear-gradient(#161940 , #090a1a);
+    /* background: linear-gradient(#161940 , #090a1a); */
     color: #fff
 
 }
@@ -34,14 +34,11 @@ body{
     left: var(--wrap-left);
 }
 
-.svg-container-1{
+.svg-containers{
+    width: 40%;
     position: relative;
 }
 
-.svg-container-2{
-    position: relative;
-
-}
 
 .svg-wrap{
     position: relative;
@@ -66,30 +63,36 @@ body{
 /* postion individual */
 
 
+.wrap-react{
+    left: 92%;
+}
 
 .wrap-jquery{
-    right: 20%;
+    left: 62%;
 }
 
 .wrap-python{
-    right: 40%;
+    left: 32%;
 }
 
 .wrap-css{
-    right: 20%;
+    left: 62%;
 }
 
+.wrap-sass{
+    left: 92%;
+}
 
 .wrap-redux{
-    left: 20%;
+    left: 30%;
 }
 
 .wrap-db{
-    left: 40%;
+    left: 60%;
 }
 
 .wrap-netlify{
-    left: 20%;
+    left: 30%;
 }
 
 
@@ -100,9 +103,7 @@ body{
         }
 }
 
-.svg-containers{
-    width: 40%;
-}
+
 
 .wrapper{
     max-width: 1200px;
@@ -110,7 +111,7 @@ body{
 }
 
 .bio-container{
-    width: 15%;
+    width: 20%;
     color: #fff;
     display: flex;
     justify-content: center;
