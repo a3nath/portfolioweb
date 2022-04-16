@@ -18,8 +18,30 @@
     <link rel='stylesheet' href='./styles/styles.css'>
 </head>
 <body>
-    <main> 
-        <section id='cover' class='cover'>
+    <header class="header" id="home">
+        <div class="nav-container container">
+            <nav class="header-nav">
+                <a href="#home">
+                    <h2>
+                        Amar Nath
+                    </h2>
+                </a>
+                <button class="hamburger">
+                </button>
+                <ul>
+                    <li class="nav-options">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-options">
+                        <a href="#projects">Projetcs</a>
+                    </li>
+                    <li class="nav-options">
+                        <a href="#connect">Connect</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id='cover' class='cover'>
             <div class="svg-container-1 svg-containers">
                 <div class='svg-wrap wrap-react wrap-up'>
                     <img class='svg' src='./assets/react-logo.png'>
@@ -58,10 +80,10 @@
                     <img src='./assets/web-logo.png' class='svg'>
                 </div> -->
             </div>
-            <div class="contianer bio-container">
-                <div class="bio">
-                    <h2 class='bio-greet bio-text'>Hello! I'm</h2>
-                    <h1 class='bio-name bio-text'> Amar Nath</h1>
+            <div class="container intro-container">
+                <div class="inro-box">
+                    <h2 class='intro-greet intro-text'>Hello! I'm</h2>
+                    <h1 class='intro-name intro-text'> Amar Nath</h1>
                     <!-- <p class='bio-about bio-text'>A Web Developer with a passion for ... As a data scientist, I use my analytical and communication skills to collaborate with diverse teams to create engaging, accessible web tools.</p> -->
                 </div>
                 <!-- <img src='./assets/portfolio_img.JPG' class='bio-img'> -->
@@ -119,55 +141,86 @@
                     <img src='./assets/node-logo.png' class='svg'>
                 </div>
             </div>
+        </div>
+    </header>
+    <main> 
+        <section id='about' class='about'>
+            <div class="container bio-container">
+                <h2>About</h2>
+                <div class="bio-box">
+                    <div class="bio-about">
+                    A Web Developer with a passion for ... As a data scientist, I use my analytical and communication skills to collaborate with diverse teams to create engaging, accessible web tools                    </div>
+                    <div class="bio-img">
+                        <img src="./assets/portfolio_img.JPG">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id = 'projects' class='projects'> 
-            <div class="wrapper ">
+        <section id= 'projects' class='projects'> 
+            <div class="container project-container">
                 <h1>Projects</h1>
-                <div class="project1 project">
-                    <div class='project-text'>
-                        <h2>
-                            Radiofighters
-                        </h2>
-                        <p>Stack icons</p>
-                        <p>A music trivia app that allows users to enter their favourite band and utilizes AudioDB REST API to quiz and score users
-                        </p>                        
-                        <a target='_blank' href="https://radiofighters.netlify.app/"><i class='fas fa-wifi'></i></a>
-                        <a target='_blank' href="https://github.com/a3nath/radiofighters"><i class='fab fa-github'></i></a>
+                <div class="project-box">
+                    <div class="project1 project row">
+                        <div class='project-img col-6'>
+                            <img src="./assets/RFcropped.png" alt="radio fighters project screenshot" class= 'projImg'>
+                        </div>
+                        <div class='project-text col-6'>
+                            <h2>
+                               Portfolio Tracker
+                            </h2>
+                            <p>Stack icons</p>
+                            <p>A music trivia app that allows users to enter their favourite band and utilizes AudioDB REST API to quiz and score users
+                            </p>                        
+                            <a target='_blank' href="https://radiofighters.netlify.app/"><i class='fas fa-wifi'></i></a>
+                            <a target='_blank' href="https://github.com/a3nath/radiofighters"><i class='fab fa-github'></i></a>
+                        </div>
                     </div>
-                    <div class='project-img'>
-                        <img src="./assets/RFcropped.png" alt="radio fighters project screenshot" class= 'projImg'>
+                    <div class="project2 project row">
+                        <div class='project-text col-6'>
+                            <h2>
+                                Radio Fighters
+                            </h2>
+                            <p>Stack icons</p>
+                            <p>A music trivia app that allows users to enter their favourite band and utilizes AudioDB REST API to quiz and score users
+                            </p>                        
+                            <a target='_blank' href="https://radiofighters.netlify.app/"><i class='fas fa-wifi'></i></a>
+                            <a target='_blank' href="https://github.com/a3nath/radiofighters"><i class='fab fa-github'></i></a>
+                        </div>
+                        <div class='project-img col-6'>
+                            <img src="./assets/RFcropped.png" alt="radio fighters project screenshot" class= 'projImg'>
+                        </div>
                     </div>
-                </div>
-                <div class="project2 project">
-                    <div class='project-text'>
-                        <h2>
-                            Burger Builder
-                        </h2>
-                        <p>Stack icons</p>
-                        <p>
-                            Users login to customize and order a burger using Firebase that authenticates users and saves order details in database    
-                        </p>
-                        <a target="_blank" href='https://academindburger.web.app/'><i class='fas fa-wifi'></i></a>
-                        <a target="_blank" href='https://github.com/a3nath/Burger-Builder'><i class='fab fa-github'></i></a>
+                    <div class="project3 project row">
+                        <div class='project-text col-6'>
+                            <h2>
+                                Burger Builder
+                            </h2>
+                            <p>Stack icons</p>
+                            <p>
+                                Users login to customize and order a burger using Firebase that authenticates users and saves order details in database    
+                            </p>
+                            <a target="_blank" href='https://academindburger.web.app/'><i class='fas fa-wifi'></i></a>
+                            <a target="_blank" href='https://github.com/a3nath/Burger-Builder'><i class='fab fa-github'></i></a>
+                        </div>
+                        <div class='project-img col-6'>
+                            <img src="./assets/BBcropped.png" alt="burger builder project screenshot" class= 'projImg'>
+                        </div>
                     </div>
-                    <div class='project-img'>
-                        <img src="./assets/BBcropped.png" alt="burger builder project screenshot" class= 'projImg'>
-                    </div>
-                </div>
-                <div class="project3 project">
-                    <div class='project-text'>
-                        <h2>
-                            Homecooks
-                        </h2>
-                        <p>Stack icons</p>
-                        <p>
-                            A simple React food delivery app that displays cooks working from home
-                        </p>
-                        <a target='_blank' href='https://homecooks.netlify.app/home'><i class='fas fa-wifi'></i></a>
-                        <a target='_blank' href='https://github.com/a3nath/homecooksreact'><i class='fab fa-github'></i></a>
-                    </div>
-                    <div class='project-img'>
-                        <img src="./assets/HCcropped.png" alt="Homecooks project screenshot" class= 'projImg'>
+                    <div class="project4 project row">
+                        <div class='project-text col-6'>
+                            <h2>
+                                Homecooks
+                            </h2>
+                            <p>Stack icons</p>
+                            <p>
+                                A simple React food delivery app that displays cooks working from home
+                            </p>
+                            <a target='_blank' href='https://homecooks.netlify.app/home'><i class='fas fa-wifi'></i></a>
+                            <a target='_blank' href='https://github.com/a3nath/homecooksreact'><i class='fab fa-github'></i></a>
+                        </div>
+                        <div class='project-img col-6'>
+                            <img src="./assets/HCcropped.png" alt="Homecooks project screenshot" class= 'projImg'>
+                        </div>
                     </div>
                 </div>
         </section>
