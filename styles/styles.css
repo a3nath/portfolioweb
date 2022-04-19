@@ -193,6 +193,14 @@ a {
     border-radius: 5px;
 }
 
+.projvid{
+    opacity: 0.9;
+    border: 0.2rem solid transparent;
+    width: 100%;
+}
+
+
+
 h1{
     font-family: 'Nunito', serif;
     font-size: 4rem;
