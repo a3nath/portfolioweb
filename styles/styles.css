@@ -180,6 +180,10 @@ a {
 
 /* projects */
 
+.col-6{
+    max-width: 48%;
+}
+
 .projects{
     margin: 60px 0;
     left: 15%;
@@ -193,41 +197,36 @@ a {
 }
 
 .project-box > li {
-	margin: 7% 5% 5%;
+	margin: 15% 0%;
 }
 
 
 .project-box > li:nth-of-type(2n) {
     text-align: right;
-    margin-right: 0;
 }
 
 .project-box > li:nth-of-type(2n+1) {
     text-align: left;
-    margin-left:0;
 }
 
-.project-text{
-    width: 50%;
-    padding:0 10px;
+
+.project-box > li > :first-child{
+    margin-right: 20px
 }
 
-.project-title{
-        font-size: calc(2rem + 1vw);
-        margin: 0;
-        font-weight: bold;
-        position: relative;
+.project-box > li > :last-child{
+    margin-left: 20px
+}
+
+.project-title {
+    font-size: calc(2rem + 1vw);
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
 }
 
 .project-description{
-    margin: 4% 0;
-  
-}
-
-.projImg{
-    width: 400px;
-    height:250px;
-    border-radius: 5px;
+    margin: 10px 0;
 }
 
 .projvid{
@@ -236,19 +235,46 @@ a {
     width: 100%;
 }
 
-.project-links{
+.project-links, .project-tools-icons{
     display: flex;
+    margin: 20px 0 20px 0 ;
 }
 
-.project-box > li:nth-of-type(2n) .project-links{
+.project-links a {
+    font-size: calc(1rem + 0.75vw);
+    color: #d57866;
+    text-decoration: none;
+}
+
+.project-links a:hover{
+    color:#2a307a;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-icon, .project-icon-img{
+    font-size: 3rem;
+}
+
+.project-icon-img{
+    width: 7%
+}
+
+.project-box > li:nth-of-type(2n) ul{
     justify-content: flex-end;
 }
 
 
-.project-box > li:nth-of-type(2n+1) .project-links{
+.project-box > li:nth-of-type(2n+1) ul{
     justify-content: flex-start;
 }
 
+.project-box > li:nth-of-type(2n) .project-icon, .project-box > li:nth-of-type(2n) .project-icon-img, .project-box > li:nth-of-type(2n) li > a {
+    margin-left: 15px;
+}
+
+.project-box > li:nth-of-type(2n+1) .project-icon, .project-box > li:nth-of-type(2n+1) .project-icon-img, .project-box > li:nth-of-type(2n+1) li > a{
+    margin-right: 15px;
+}
 
 h1{
     font-family: 'Nunito', serif;
@@ -264,9 +290,7 @@ a{
     text-decoration: none;
 }
 
-.project-links>li>a{
-    margin: 0 2px;
-}
+
 
 /* footer {
     flex-direction: column;
