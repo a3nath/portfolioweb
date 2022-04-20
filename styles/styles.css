@@ -14,12 +14,9 @@ html{
 }
 
 body{
-    background-color: #fff;
-    color: #000;
     line-height: 1.5;
     color: #2a307a;
     background-color: #d4eef3;
-    font-family: 'Zen Kurenaido', sans-serif;
 
 }
 
@@ -41,6 +38,9 @@ p {
     font-size: calc(1rem + 0.75vw);
 }
 
+i {
+    font-size: 200px;
+}
 
 /* cover */
 
@@ -75,7 +75,7 @@ p {
 }
 
 .svg-containers{
-    width: 40%;
+    min-width: 20%;
     position: relative;
 }
 
@@ -152,10 +152,15 @@ p {
         }
 }
 
+.container{
+    width: 80%;
+    max-width: 1400px;
+}
+
 /* intro */
 
 .intro-container{
-    width: 20%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,17 +173,15 @@ p {
 }
 
 .intro-name{
-    font-size: 15.2rem;
+    font-size: 15.4rem;
     margin:15px 0 20px 0;
     font-family: 'Baloo Da 2', cursive;
+    color: #d57866;
 }
 
 /*  */
 
-.container{
-    width: 80%;
-    max-width: 1400px;
-}
+
 
 section{
     margin: 40px 0;
@@ -187,11 +190,14 @@ section{
 .section-title{
     font-family: 'Fugaz One', cursive;
     text-transform: uppercase;
-   
+    color: #d57866;
 }
 
-
 /* about */
+
+.bio-container{
+    border-bottom: solid 0.32rem #2a307a;
+}
 
 .bio-box{
     display: flex;
@@ -214,6 +220,10 @@ section{
 
 .col-6{
     max-width: 48%;
+}
+
+.project-container{
+    border-bottom: solid 0.32rem #2a307a;
 }
 
 .project-box{
@@ -317,6 +327,3 @@ section{
     padding: 10px 0;
 } */
 
-i {
-    font-size: 200px;
-}
