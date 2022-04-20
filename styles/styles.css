@@ -39,7 +39,8 @@ p {
 }
 
 i {
-    font-size: 200px;
+    font-size: 3rem;
+    color: #2a307a;
 }
 
 /* cover */
@@ -216,6 +217,20 @@ section{
     margin-right: 15%;
 }
 
+.social-links{
+    display: flex;
+    color: inherit;
+    margin: 20px 0;
+}
+
+.social-links i {
+    margin-right: 30px;
+}
+
+.social-links i:hover{
+    color: #d57866;
+}
+
 /* projects */
 
 .col-6{
@@ -283,12 +298,12 @@ section{
 
 .project-links a {
     font-size: calc(1rem + 0.75vw);
-    color: #d57866;
+    color:#2a307a;
     text-decoration: none;
 }
 
 .project-links a:hover{
-    color:#2a307a;
+    color: #d57866;
     transition: all 0.3s ease-in-out;
 }
 
