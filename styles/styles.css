@@ -206,9 +206,11 @@ section{
 }
 
 .bio-about{
+    padding-bottom: 25px;
     padding-right: 25px;
-    width: 75%;
+    width: 80%;
     left:0;
+    line-height: 2;
 }
 
 .bio-img{
@@ -332,8 +334,12 @@ section{
     font-size: 3rem;
 }
 
+.project-icon-container{
+    width: 6%;
+}
+
 .project-icon-img{
-    width: 7%
+    width: 80%
 }
 
 .project-box > li:nth-of-type(2n) ul{
