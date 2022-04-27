@@ -338,7 +338,7 @@ section{
 } */
 
 .project-icon{
-    font-size: 3rem;
+    font-size: 30px;
 }
 
 .project-icon-container{
@@ -346,7 +346,8 @@ section{
 }
 
 .project-icon-img{
-    width: 80%
+    width: 30px;
+    height: 30px;
 }
 
 .project-box > li:nth-of-type(2n) ul{
@@ -358,11 +359,11 @@ section{
     justify-content: flex-start;
 }
 
-.project-box > li:nth-of-type(2n) .project-icon, .project-box > li:nth-of-type(2n) .project-icon-img, .project-box > li:nth-of-type(2n) li > a {
+.project-box > li:nth-of-type(2n) .project-icon, .project-box > li:nth-of-type(2n) .project-icon-container, .project-box > li:nth-of-type(2n) li > a {
     margin-left: 15px;
 }
 
-.project-box > li:nth-of-type(2n+1) .project-icon, .project-box > li:nth-of-type(2n+1) .project-icon-img, .project-box > li:nth-of-type(2n+1) li > a{
+.project-box > li:nth-of-type(2n+1) .project-icon, .project-box > li:nth-of-type(2n+1) .project-icon-container, .project-box > li:nth-of-type(2n+1) li > a{
     margin-right: 15px;
 }
 
