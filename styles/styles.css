@@ -246,8 +246,8 @@ section{
 
 /* projects */
 
-.col-6{
-    max-width: 48%;
+.project-content{
+    width: 50%;
 }
 
 .project-container{
@@ -257,25 +257,11 @@ section{
 
 .project-box{
     padding: 80px 0;
+    position: relative;
 }
 
 
-.project-box > li:nth-of-type(2n) {
-    text-align: right;
-}
 
-.project-box > li:nth-of-type(2n+1) {
-    text-align: left;
-}
-
-
-.project-box > li > :first-child{
-    margin-right: 20px
-}
-
-.project-box > li > :last-child{
-    margin-left: 20px
-}
 
 .projects{
     left: 15%;
@@ -305,10 +291,21 @@ section{
     line-height: 1.75;
 }
 
+.project-vid-container{
+    position: relative;
+}
+
 .projvid{
     opacity: 0.9;
     border: 0.2rem solid transparent;
     width: 100%;
+    position: absolute;
+    left: 0;
+    /* top: -8px; */
+}
+
+.project-box > li .project-icon, .project-box > li .project-icon-container, .project-box > li li > a{
+    margin-right: 15px;
 }
 
 .project-links, .project-tools-icons{
@@ -354,26 +351,6 @@ section{
     height: 100%;
 }
 
-.project-box > li:nth-of-type(2n) ul{
-    justify-content: flex-end;
-    align-items: center;
-}
-
-
-.project-box > li:nth-of-type(2n+1) ul{
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.project-box > li:nth-of-type(2n) .project-icon, .project-box > li:nth-of-type(2n) .project-icon-container, .project-box > li:nth-of-type(2n) li > a {
-    margin-left: 15px;
-}
-
-.project-box > li:nth-of-type(2n+1) .project-icon, .project-box > li:nth-of-type(2n+1) .project-icon-container, .project-box > li:nth-of-type(2n+1) li > a{
-    margin-right: 15px;
-}
-
-
 .contact-container {
     display: flex;
     align-items: center;
@@ -386,14 +363,68 @@ section{
 }
 
 @media screen and (min-width: 1287px){
-    .row{
+    .project{
         flex-wrap: nowrap
     }
+}
+
+@media screen and (min-width: 901px){
+    
+    .project-box > li:nth-of-type(2n) {
+        text-align: right;
+    }
+    
+    .project-box > li:nth-of-type(2n+1) {
+        text-align: left;
+    }
+    
+    
+    .project-box > li > :first-child{
+        margin-right: 20px
+    }
+    
+    .project-box > li > :last-child{
+        margin-left: 20px
+    }
+    
+    .project-box > li:nth-of-type(2n) ul{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    
+    .project-box > li:nth-of-type(2n+1) ul{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .project-box > li:nth-of-type(2n) .project-icon, .project-box > li:nth-of-type(2n) .project-icon-container, .project-box > li:nth-of-type(2n) li > a {
+        margin-left: 15px;
+    }
+    
+    .project-box > li:nth-of-type(2n+1) .project-icon, .project-box > li:nth-of-type(2n+1) .project-icon-container, .project-box > li:nth-of-type(2n+1) li > a{
+        margin-right: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 1287px){
-    .row{
+    .project{
         flex-wrap: nowrap
     }
 }
 
+@media screen and (max-width: 900px){
+    .project-box > li:nth-of-type(2n+1){
+        flex-direction: column;
+    }
+    .project-box > li:nth-of-type(2n){
+        flex-direction: column-reverse;
+    }
+    .project-content{
+        width: 100%;
+    }
+    .projvid{
+        position:  unset;
+    }
+}
