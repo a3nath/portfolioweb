@@ -341,12 +341,12 @@ section{
 
 .project-icon{
     font-size: calc(1rem + 0.9vw);
-    height: 35px;
+    height: 25px;
 }
 
 .project-icon-container{
     width: calc(1rem + 0.9vw);
-    height: 35px;
+    height: 25px;
 }
 
 .project-icon-img{
@@ -385,8 +385,15 @@ section{
     margin-left: 25%;
 }
 
+@media screen and (min-width: 1287px){
+    .row{
+        flex-wrap: nowrap
+    }
+}
+
 @media screen and (max-width: 1287px){
     .row{
         flex-wrap: nowrap
     }
 }
+
