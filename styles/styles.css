@@ -17,6 +17,7 @@ body{
     line-height: 1.5;
     color: #2a307a;
     background-color: #d4eef3;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -260,9 +261,6 @@ section{
     position: relative;
 }
 
-
-
-
 .projects{
     left: 15%;
 }
@@ -314,7 +312,7 @@ section{
 }
 
 .project-links a {
-    font-size: calc(1rem + 0.75vw);
+    font-size: calc(1rem + 0.8vw);
     color:#d57866;
     text-decoration: none;
 }
@@ -360,6 +358,10 @@ section{
 
 .footer-links{
     margin-left: 25%;
+}
+
+.social-2{
+    display: none;
 }
 
 @media screen and (min-width: 1287px){
@@ -421,10 +423,50 @@ section{
     .project-box > li:nth-of-type(2n){
         flex-direction: column-reverse;
     }
+    .project{
+        margin-bottom: 80px;
+    }
     .project-content{
         width: 100%;
     }
     .projvid{
         position:  unset;
+    }
+    .project-text{
+        margin-top: 40px;
+    }
+    .project-icon-container{
+        width: calc(1rem + 1.8vw);
+    }
+    .contact-container{
+        justify-content: space-between;
+    }
+    p {
+        font-size: calc(1rem + 0.80vw);
+    }
+    .project-links a {
+        font-size: calc(1rem + 1.1vw);
+    }   
+    .bio-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-box{
+        width: 100%;
+    }
+    .bio-img{
+        width: 100%;
+        text-align: center;
+    }
+    .social-1{
+        display: none;
+    }
+    .social-2{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .project-links, .project-tools-icons{
+        margin: 6px;
     }
 }
