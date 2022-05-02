@@ -478,5 +478,21 @@ section{
     .svg-containers{
         display: none;
     }
+    .project{
+        margin-bottom: 0px;
+    }
+    .footer-links{
+        margin-left: 10%;
+    }
+    .footer-links i {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:465px){
+    .footer-links{
+        margin-left: 0%;
+    }
 
 }
