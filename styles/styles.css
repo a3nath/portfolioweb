@@ -5,6 +5,7 @@
     --transition-speed: 2.2s;
     --wrap-left: 20px;
     --wrap-right: 20px;
+    --view-port: 60vh;
 }
 
 html{
@@ -71,7 +72,7 @@ i {
 
 
 .cover{
-    height: 90vh;
+    height: var(--view-port);
     display: flex;
 }
 
@@ -379,7 +380,6 @@ section{
         text-align: left;
     }
     
-    
     .project-box > li > :first-child{
         margin-right: 20px
     }
@@ -475,35 +475,35 @@ section{
 }
 
 @media screen and (max-width:750px){
-    /* .cover{
-        flex-direction: column;
-        justify-content: center;
-    } */
+.cover{
+      padding: 0
+    }
     .svg-wrap{
         top:0%;
+        margin-top: 20px;
     }
     .svg{
         top:0%;
     }
     .wrap-top { 
-        left: 10%;
+        left: 0%;
         top:0
     }
     .wrap-up {
-        left: 20%;
+        left: 0%;
         top:0%
     }
     .wrap-charm {   
-        left: 30%
+        left: 0%
     }
     .wrap-down {
-        left: 40%
+        left: 0%
     } 
     .wrap-strange{
-        left: 60%
+        left: 0%
     }
     .intro-container{
-        margin-bottom: 40%;
+        padding-bottom: 20vh;
     }
     .intro-name{
         font-size: calc(1rem + 12vw);
@@ -531,30 +531,23 @@ section{
         animation-timing-function: linear;
         animation-iteration-count: 1;
     }
+
+
     @keyframes falling {
         0%{
             transform: translateY(0px) scalex(1);
         }
         25%{
-            transform: translateY(calc(10vh - var(--width))) scalex(1);
+            transform: translateY(calc(0.25*var(--view-port) - 8*var(--width))) scalex(1);
         }
         50% { 
-        transform: translateY(calc(25vh - var(--width))) scalex(1);
+        transform: translateY(calc(0.50*var(--view-port) - 8*var(--width))) scalex(1);
         }
-        70% {
-        transform: translateY(calc(35vh - var(--width))) scalex(1);
-        }
-        80% { 
-        transform: translateY(calc(40vh - var(--width))) scalex(1);
-        }
-        85% { 
-        transform: translateY(calc(45vh - var(--width))) scalex(1.2);
-        }
-        93% { 
-        transform: translateY(calc(50vh - var(--width))) scalex(1);
+        75% {
+        transform: translateY(calc(0.75*var(--view-port) - 8*var(--width))) scalex(1);
         }
         100% { 
-        transform: translateY(calc(60vh - var(--width))) scalex(1);
+        transform: translateY(calc(var(--view-port) - 8*var(--width))) scalex(1);
         } 
     }    
 }    
