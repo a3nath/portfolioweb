@@ -467,7 +467,7 @@ section{
         width: 100%;
     }
     .project-links, .project-tools-icons{
-        margin: 6px;
+        margin: 6px 0;
     }
     .project-box > li .project-icon, .project-box > li .project-icon-container, .project-box > li li > a{
     margin-right: 15px;
@@ -484,6 +484,12 @@ section{
     }
     .svg{
         top:0%;
+        animation-delay: 1s;
+        animation-duration: 5s;
+        animation-fill-mode: both; 
+        animation-name: falling;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
     }
     .wrap-top { 
         left: 0%;
@@ -518,19 +524,24 @@ section{
         margin-bottom: 0px;
     }
     .footer-links{
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .footer-links i {
         font-size: 2rem;
     }
-    .svg{
-        animation-delay: 1s;
-        animation-duration: 5s;
-        animation-fill-mode: both; 
-        animation-name: falling;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
+    .section-title{
+        font-size: calc(1rem + 4vw);
     }
+    .project-title {
+        font-size: calc(1rem + 2vw);
+    }
+    p{
+        font-size: calc(1rem + 1.4vw);
+    }
+    .project-links a {
+        font-size: calc(1rem + 1.8vw);
+    }
+
 
 
     @keyframes falling {
