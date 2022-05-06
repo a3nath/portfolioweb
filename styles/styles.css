@@ -5,7 +5,7 @@
     --transition-speed: 2.2s;
     --wrap-left: 20px;
     --wrap-right: 20px;
-    --view-port: 60vh;
+    --view-port: 90vh;
 }
 
 html{
@@ -417,8 +417,12 @@ section{
     .project-box > li:nth-of-type(2n+1) .project-icon, .project-box > li:nth-of-type(2n+1) .project-icon-container, .project-box > li:nth-of-type(2n+1) li > a{
         margin-right: 15px;
     }
-    
-    
+}
+
+@media screen and (min-width:750px){
+    .svg-container-mobile{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1287px){
@@ -485,9 +489,21 @@ section{
     }
 }
 
+
 @media screen and (max-width:750px){
     .cover{
-      padding: 0
+      padding: 0;
+      position: relative;
+    }
+    .svg-container-1, .svg-container-2{
+        display: none;
+    }
+    .svg-container-mobile{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        z-index: 100;
+        position: absolute;
     }
     .svg-wrap{
         top:0%;
@@ -569,7 +585,7 @@ section{
         transform: translateY(calc(0.75*var(--view-port) - 8*var(--width))) scalex(1);
         }
         100% { 
-        transform: translateY(calc(var(--view-port) - 8*var(--width))) scalex(1);
+        transform: translateY(calc(var(--view-port) - 10*var(--width))) scalex(1);
         } 
     }    
 }    
