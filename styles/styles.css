@@ -608,6 +608,10 @@ section{
     .bio-img{
         width: 100%;
     }
+    .mobile-svg{
+        width: calc(0.8*var(--width));
+        height:  calc(0.8*var(--width));
+    }
     .project-title {
         font-size: calc(1rem + 3vw);
     }
@@ -617,5 +621,6 @@ section{
     .project-links a {
         font-size: calc(1rem + 2.4vw);
     }
+
 
 }
