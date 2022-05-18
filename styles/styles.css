@@ -233,7 +233,7 @@ section{
 .bio-img{
     width: 100%;
     height: 80%;
-    filter: grayscale(0.5);
+    filter: saturate(60%);
     border-radius: 5px;
 }
 
@@ -573,6 +573,9 @@ section{
     .project-links a {
         font-size: calc(1rem + 1.8vw);
     }
+    .social-2 i{
+        margin-right: calc(1rem + 2vw);
+    }
 
 
 
@@ -581,16 +584,16 @@ section{
             transform: translateY(0px) scalex(1);
         }
         25%{
-            transform: translateY(calc(0.25*var(--view-port) - 8*var(--width))) scalex(1);
+            transform: translateY(calc(0.25*var(--view-port) - 2*var(--width))) scalex(1);
         }
         50% { 
-        transform: translateY(calc(0.50*var(--view-port) - 8*var(--width))) scalex(1);
+        transform: translateY(calc(0.50*var(--view-port) - 4*var(--width))) scalex(1);
         }
         75% {
-        transform: translateY(calc(0.75*var(--view-port) - 8*var(--width))) scalex(1);
+        transform: translateY(calc(0.75*var(--view-port) - 4*var(--width))) scalex(1);
         }
         100% { 
-        transform: translateY(calc(var(--view-port) - 10*var(--width))) scalex(1);
+        transform: translateY(calc(var(--view-port) - 2*var(--width))) scalex(1);
         } 
     }    
 }    
