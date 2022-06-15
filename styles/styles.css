@@ -329,27 +329,11 @@ section{
     color: #2a307a;
     transition: all 0.3s ease-in-out;
 }
-/* .project-links a:hover::after {
-	/* content: "";
-	position: absolute;
-	width: 0;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: #4933BC;
-	visibility: hidden;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-} */
-
-.project-icon{
-    font-size: calc(1rem + 0.9vw);
-    height: 25px;
-}
 
 .project-icon-container{
     width: calc(1rem + 0.9vw);
-    height: 25px;
+    max-height: 35px;
+    max-width: 35px;
 }
 
 .project-icon-img{
