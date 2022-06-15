@@ -123,23 +123,23 @@ i {
 
 
 .wrap-react{
-    left: 92%;
+    left: calc(100% - var(--width))
 }
 
 .wrap-jquery{
-    left: 62%;
+    left: calc(70% - var(--width))
 }
 
 .wrap-python{
-    left: 32%;
+    left: calc(40% - var(--width))
 }
 
 .wrap-css{
-    left: 62%;
+    left: calc(70% - var(--width))
 }
 
 .wrap-sass{
-    left: 92%;
+    left: calc(100% - var(--width));
 }
 
 .wrap-redux{
@@ -354,7 +354,6 @@ section{
 
 .project-icon-img{
     width: 100%;
-    min-height: 35px;
     height: 100%;
 }
 
