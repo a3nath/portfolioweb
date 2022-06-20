@@ -18,7 +18,8 @@ html{
 body{
     line-height: 1.5;
     color: #2a307a;
-    background-color: #d4eef3;
+    background: linear-gradient(to right, #d4eef3, #c0e6ed 40%,#acdee8 60%,#98d6e2 80%,#84cedc 90%);
+    /* background-color: #d4eef3; */
     font-family: 'Roboto', sans-serif;
 
 }
@@ -86,6 +87,8 @@ i {
 .svg-containers{
     min-width: 20%;
     position: relative;
+    display: none;
+    width: 0%;
 }
 
 /* svgs */
