@@ -369,12 +369,13 @@ section{
 }
 
 .project-tools-icons{
-    display: none;
+    display: flex;
 }
 
 .project-links{
     display: flex;
     margin: 2px;
+    position: relative;
 }
 
 .project-links a {
@@ -683,3 +684,34 @@ section{
     left: -4%;
 	z-index: -1;
 }
+
+.project-box > li:nth-of-type(2n) .live-link::after{
+    content: "";
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    background-color: #fff;
+    bottom: -5px;
+    right: 120px;
+    z-index: -100;
+}
+
+.project-box > li:nth-of-type(2n) .live-link:hover:after{
+    background-color: #2a307a;
+}
+
+
+.project-box > li:nth-of-type(2n+1) .live-link::after{
+        content: "";
+        width: 80px;
+        height: 60px;
+        position: absolute;
+        background-color: #fff;
+        bottom: -5px;
+        left: -10px;
+        z-index: -100;
+}
+.project-box > li:nth-of-type(2n+1) .live-link:hover:after{
+    background-color: #2a307a;
+}
+
