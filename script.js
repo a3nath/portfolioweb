@@ -1,9 +1,13 @@
 function playVideo(e){
     this.play()
+    this.style.border = "solid #2a307a"
+
 }
 
 function pauseVideo(e){
     this.pause()
+    this.style.border = ""
+    this.style.box
 }
 
 function playRotate(e){

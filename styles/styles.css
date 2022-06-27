@@ -59,7 +59,7 @@ i {
 
 .container{
     width: 80%;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 .cover{
@@ -313,9 +313,6 @@ section{
 
 /* projects */
 
-.project-content{
-    width: 50%;
-}
 
 .project-container{
     border-bottom: solid 0.32rem #2a307a;
@@ -333,9 +330,12 @@ section{
 
 .project{
     margin-bottom: 150px;
-    display: flex;
-    width: 100%;
     padding:40px 0;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
 }
 
 .project-text{
@@ -353,24 +353,17 @@ section{
 }
 
 .project-description{
-    margin: 8px 0;
+    margin: 20px 0;
     line-height: 1.75;
 }
 
-.project-vid-container{
-    position: relative;
-    height: 500px;
-    width: 600px;
 
-}
 
 .projvid{
     opacity: 0.9;
     border: 0.2rem solid transparent;
-    position: absolute;
-    left: 0;
-    height: 450px;
-    width: 600px;
+    width: 100%;
+
     /* top: -8px; */
 }
 
@@ -381,7 +374,7 @@ section{
 
 .project-links{
     display: flex;
-    margin: 5px 2px 0 2px;
+    margin: 15px 0;
     position: relative;
     justify-content: space-evenly;
 }
@@ -705,7 +698,7 @@ section{
 }
 
 .project-box > li:nth-of-type(2n) .live-link::after{
-    left: 165px;
+    left: 190px;
 }
 
 .project-box > li:nth-of-type(2n) .live-link:hover:after{
@@ -713,7 +706,7 @@ section{
 }
 
 .project-box > li:nth-of-type(2n+1) .live-link::after{
-    left: 155px;
+    left: 175px;
 }
 .project-box > li:nth-of-type(2n+1) .live-link:hover:after{
     background-color: #2a307a;
