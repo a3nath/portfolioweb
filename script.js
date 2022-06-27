@@ -1,13 +1,28 @@
-function playVideo(e){
-    this.play()
-    this.style.border = "solid #2a307a"
 
+
+const projVid = document.querySelectorAll('.projvid');
+
+projVid.forEach(vid => vid.addEventListener("mouseover", playVideo))
+projVid.forEach(vid => vid.addEventListener("mouseleave", pauseVideo))
+
+const svgImg = document.querySelectorAll('.svg-img');
+
+svgImg.forEach(img => img.addEventListener("mouseover", playRotate))
+svgImg.forEach(img => img.addEventListener("mouseleave", pauseRotate))
+
+const vidStyles = `
+    border: solid #2a307a;
+    box-shadow: 0 20px 20px 0 #2a307a
+    `
+
+function playVideo(e){
+    this.play();
+    this.style.cssText = vidStyles
 }
 
 function pauseVideo(e){
     this.pause()
-    this.style.border = ""
-    this.style.box
+    this.style = ""
 }
 
 function playRotate(e){
@@ -21,13 +36,3 @@ function pauseRotate(e){
     // animation: spin 8s linear infinite;
     this.style.animation = ""
 }
-
-const projVid = document.querySelectorAll('.projvid');
-
-projVid.forEach(vid => vid.addEventListener("mouseover", playVideo))
-projVid.forEach(vid => vid.addEventListener("mouseleave", pauseVideo))
-
-const svgImg = document.querySelectorAll('.svg-img');
-
-svgImg.forEach(img => img.addEventListener("mouseover", playRotate))
-svgImg.forEach(img => img.addEventListener("mouseleave", pauseRotate))
