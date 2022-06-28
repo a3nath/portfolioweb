@@ -36,3 +36,11 @@ function pauseRotate(e){
     // animation: spin 8s linear infinite;
     this.style.animation = ""
 }
+
+const arrow = document.querySelector('.arrow')
+
+arrow.addEventListener('click', () => {
+    const element = document.getElementById("about");
+    element.scrollIntoView({behavior:"smooth"})
+    }
+)
