@@ -94,22 +94,23 @@ i {
 /* intro */
 
 .intro-container{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     position: relative;
+    padding-bottom: 20vh;
 }
 
 
 .intro-greet{
     font-family: 'Zen Kurenaido', sans-serif;
-    font-size: 6rem
+    font-size: calc(1rem + 3vw);
 }
 
 .intro-name{
-    font-size: 14rem;
+    font-size: calc(1rem + 7vw);
     margin:15px 0 20px 0;
     font-family: 'Baloo Da 2', cursive;
     /* color: #d57866; */
@@ -117,15 +118,15 @@ i {
 }
 
 .intro-title{
-    font-size: 10rem;
+    font-size: calc(1rem + 5vw);
     font-family: 'Zen Kurenaido', sans-serif;
 
 }
 
 .intro-box::after {
 	content: "";
-	height: 300px;
-	width: 150px;
+	height: calc(15vw);
+	width: calc(10vw);
 	border-bottom: #242b58 solid 20px;
 	border-left: #242b58 solid 20px;
 	display: block;
@@ -144,7 +145,7 @@ i {
 
 .img-python{
     top: 5%;
-    left: 2%;
+    left: 0%;
     
 }
 
@@ -288,7 +289,7 @@ section{
     width: 100%;
     height: 80%;
     filter: saturate(60%);
-    border-radius: 220px;
+    border-radius: calc(10vw);
 }
 
 
@@ -650,9 +651,6 @@ section{
     } 
     .wrap-strange{
         left: 0%
-    }
-    .intro-container{
-        padding-bottom: 20vh;
     }
     .intro-name{
         font-size: calc(1rem + 12vw);
