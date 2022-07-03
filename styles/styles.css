@@ -131,7 +131,7 @@ i {
 	border-left: #242b58 solid 20px;
 	display: block;
 	position: absolute;
-	bottom: 24%;
+	bottom: calc(30vw);
 	left: -4%;
 	z-index: -1;
 }
