@@ -481,6 +481,73 @@ section{
 }
 /* media queries */
 
+
+@media screen and (min-width: 400px){
+    .intro-box::after{
+        bottom: calc(50vw);
+        border-left: #242b58 solid 15px;
+        border-bottom: #242b58 solid 15px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .intro-box::after{
+        bottom: calc(80vw);
+    }
+}
+
+@media screen and (min-width: 800px){
+    .intro-box::after{
+        bottom: calc(60vw);
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .intro-box::after{
+        bottom: calc(50vw);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .intro-box::after{
+        bottom: calc(40vw);
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+    .intro-box::after{
+        bottom: calc(32vw);
+    }
+}
+
+
+
+@media screen and (min-width: 1600px){
+    .intro-box::after{
+        bottom: calc(26vw);
+    }
+}
+
+@media screen and (min-width: 1800px){
+    .intro-box::after{
+        bottom: calc(22vw);
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .intro-box::after{
+        bottom: calc(18vw);
+    }
+}
+
+@media screen and (min-width: 2400px){
+    .intro-box::after{
+        bottom: calc(15vw);
+    }
+}
+
+
 @media screen and (min-width: 1287px){
     .project{
         flex-wrap: nowrap
