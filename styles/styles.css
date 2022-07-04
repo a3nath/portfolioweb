@@ -437,9 +437,9 @@ section{
     margin-left: 25%;
 }
 
-.social-2{
+/* .social-2{
     display: none;
-}
+} */
 
 .project-links li{ 
     background-color: #2a307a;;
@@ -590,14 +590,14 @@ section{
     .project-links a {
         font-size: calc(1rem + 1.1vw);
     } 
-    .social-1{
+    /* .social-1{
         display: none;
-    }
-    .social-2{
+    } */
+    /* .social-2{
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-    }
+    } */
     .project-links, .project-tools-icons{
         margin: 6px 0;
     }
@@ -713,9 +713,9 @@ section{
     .project-links a {
         font-size: calc(1rem + 2.4vw);
     }
-    .social-2 i{
+    /* .social-2 i{
         margin-right: calc(1rem + 2vw);
-    }
+    } */
 
 }
 
