@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Fugaz+One&family=Zen+Kurenaido&family=Baloo+Da+2&family=Roboto&display=swap" rel="stylesheet"> 
     <!--Font Awesome -->
     <script src="https://kit.fontawesome.com/41953ab97d.js" crossorigin="anonymous"></script>
+    <!-- Material Icon CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- css styling -->
     <link rel='stylesheet' href='./styles/styles.css'>
     <!-- canva -->
@@ -31,9 +33,23 @@
 <body>
     <header class="cover " id="home">
         <nav class='header-nav container'>
-            <a class='header-link' href="#home">Home</a>
-            <a class='header-link'  href="#about">About</a>
-            <a class='header-link'  href="#projects">Projects</a>
+            <ul class='header-menu'>
+                <li><a class='header-link' href="#home">Home</a></li>
+                <li> <a class='header-link'  href="#about">About</a></li>
+                <li><a class='header-link'  href="#projects">Projects</a> </li>
+            </ul>
+        </nav>
+        <nav class='header-nav-mobile container'>
+            <ul class="header-menu menu-mobile">
+                <li><a class='header-link menu-item' href="#home">Home</a></li>
+                <li> <a class='header-link menu-item'  href="#about">About</a></li>
+                <li><a class='header-link menu-item'  href="#projects">Projects</a> </li>
+            </ul>
+            <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menu-icon material-icons">menu</i>
+                <i class="close-icon material-icons">close</i>
+            </button>
         </nav>
         <div class="intro-container container intro-1">
             <div class="intro-box">
