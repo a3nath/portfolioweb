@@ -46,7 +46,7 @@ arrow.addEventListener('click', () => {
 )
 
 const menu = document.querySelector(".menu-mobile");
-const menuItems = document.querySelectorAll(".menu-item");
+const menuItems = document.querySelectorAll(".menu-link");
 const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".close-icon");
 const menuIcon = document.querySelector(".menu-icon");
