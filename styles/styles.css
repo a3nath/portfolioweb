@@ -149,7 +149,7 @@ i {
 .img-redux{
     bottom:20%;
     right: -2%;
-    animation: spin 4s linear infinite;
+    animation: spin 8s linear infinite;
 }
 
 .img-react{
@@ -556,7 +556,7 @@ section{
     .intro-box::after {
         border-left: #242b58 solid 10px;
         border-bottom: #242b58 solid 10px;
-        bottom: 45%;
+        bottom: 42%;
     }
     .bio-img-box{
         display: none;
@@ -627,7 +627,7 @@ section{
         border-left: #242b58 solid 10px;
         border-bottom: #242b58 solid 10px;
         bottom: 40%;
-        height: 25vw;
+        height: 20vw;
         width: 15vw;
 
     }
@@ -654,7 +654,7 @@ section{
         display: none;
     }
     .intro-box::after{
-        bottom: calc(45%);
+        bottom: 40%;
         border-left: #242b58 solid 15px;
         border-bottom: #242b58 solid 15px;
     }
