@@ -19,7 +19,7 @@ body{
     line-height: 1.5;
     color: #5d48cb;
     /* background: linear-gradient(to right, #d4eef3, #c0e6ed 40%,#acdee8 60%,#98d6e2 80%,#84cedc 90%); */
-    background: radial-gradient(ellipse at left, #98d6e2, transparent), radial-gradient(ellipse at right, #2c529b, transparent);
+    background: radial-gradient(ellipse at left, #98d6e2, transparent), radial-gradient(ellipse at right, #d4f3e9, transparent);
     /* background-color: #d4eef3; */
     font-family: 'Roboto', sans-serif;
 
