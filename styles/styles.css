@@ -149,6 +149,7 @@ i {
 .img-redux{
     bottom:20%;
     right: -2%;
+    animation: spin 4s linear infinite;
 }
 
 .img-react{
@@ -173,11 +174,6 @@ i {
     transform: rotate(90deg);
     transition: transform .1s;
     width: 80px;
-    /* animation-name:arrowBounce;
-    animation-delay: 0s;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite; */
 }
 
 
@@ -196,11 +192,6 @@ i {
 .arrow-top {
     transform: rotate(45deg);
     transform-origin: bottom right;
-    /* animation-name:arrowBounceTop;
-    animation-delay: 0s;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite; */
 }
 
 .arrow-bottom {
@@ -490,7 +481,7 @@ section{
 }
 
 .hamburger {
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top: 1rem;
     right: 1rem;
@@ -519,6 +510,10 @@ section{
     padding-top: 4rem;
 }
 
+.menu-link-mobile{
+    color: #fff;
+}
+
 .menu-mobile > li {
     margin-bottom: 10px;
 }
@@ -544,7 +539,6 @@ section{
         margin: 0;
         padding: 0 10px;
     }
-
     .intro-box{
         width: 100%;
     }
@@ -576,6 +570,10 @@ section{
     }
     .bio-img {
         border-radius: 1vw;
+    }
+    .svg-img{
+        width: 150px;
+        height: 100px;
     }
     .project{
         grid-template-columns: auto;
@@ -628,10 +626,14 @@ section{
     .intro-box::after {
         border-left: #242b58 solid 10px;
         border-bottom: #242b58 solid 10px;
-        bottom: 42%;
+        bottom: 40%;
         height: 25vw;
         width: 15vw;
 
+    }
+    .svg-img{
+        width: 100px;
+        height: 100px;
     }
     
 }
@@ -830,15 +832,6 @@ section{
         top:0%;
         margin-top: 20px;
     }
-     .mobile-svg{
-        top:0%;
-        animation-delay: 1s;
-        animation-duration: 5s;
-        animation-fill-mode: both; 
-        animation-name: falling;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-    } 
     .wrap-top { 
         left: 0%;
         top:0
