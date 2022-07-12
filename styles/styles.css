@@ -478,7 +478,7 @@ section{
 
 .header-nav-mobile{
     font-size: 3rem;
-    background-color: #2a307a;
+    width: 100%;
 }
 
 .hamburger {
@@ -508,11 +508,9 @@ section{
     color: #5d48cb;
     list-style: none;
     padding-top: 4rem;
-    background-color: inherit;
-}
+    background-color: #d4f3e9;
+    width: 100%;
 
-.menu-link-mobile{
-    color: #fff;
 }
 
 .menu-mobile > li {
@@ -528,8 +526,13 @@ section{
     transform: translateY(0);
 }
 
-.icon-mobile-menu{
-    color: #fff;
+.menu-link-mobile , .icon-mobile-menu{
+    color: #2a307a;
+}
+
+.menu-link-mobile{
+    padding:10px;
+    margin: 0 2px;
 }
   
   
