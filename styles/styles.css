@@ -288,15 +288,17 @@ section{
 
 .social-links{
     display: flex;
-    color: inherit;
+    color: inherit;   
 }
 
 .social-links i {
     margin-right: 30px;
+    padding: 10px;
 }
 
 .social-links i:hover{
     color: #fff;
+    background-color: #5d48cb;
 }
 
 /* projects */
