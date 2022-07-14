@@ -631,8 +631,8 @@ section{
         width: 15vw;
     }
     .svg-img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     .intro-name{
         font-size: calc(1rem + 18vw);
@@ -645,6 +645,9 @@ section{
     }
     .bio-img{
         width: 100%;
+    }
+    .arrow{
+        left:35%
     }
     .mobile-svg{
         width: calc(0.7*var(--width));
@@ -661,6 +664,10 @@ section{
     }
     .social-links i {
         font-size: 3rem;
+        margin-right: 0;
+    }
+    .footer-links i {
+        font-size: 2rem;
     }
     .contact-container p {
         margin-right: 4px;
